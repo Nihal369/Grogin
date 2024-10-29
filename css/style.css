@@ -55,9 +55,9 @@ br.clear {
 	line-height: 0;
 }
 .wrapper {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
-	max-width:1200px;
+	max-width:1400px;
 }
 .flex-wrapper {
 	display: flex;
@@ -223,7 +223,7 @@ br.clear {
     font-display: swap;
 }
 
-
+/* INTER FONTS */
 
 @font-face {
     font-family: 'Inter 28pt';
@@ -710,6 +710,296 @@ br.clear {
     font-style: normal;
     font-display: swap;
 }
+
+
+
+#notification{
+    background: #634C9F;
+    height: 41px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#notification .notify{
+    display: flex;
+    gap: 172px;
+    align-items: center;
+}
+#notification .notify span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+#notification .notify span div{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+#notification .notify h6.h6{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter 28pt";
+    color: #FFFFFF;
+}
+#notification .notify span h6.one{
+    font-size: 12px;
+    font-family: "Inter 18pt";
+    color: #FFFFFF;
+    opacity: 70%;
+}
+#notification .notify span div h5{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Inter 18pt";
+}
+#notification .notify span div h6{
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 70%;
+    font-family: "Inter 18pt";
+}
+
+#head{
+    height: 41px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+#head .wrapper{
+
+}
+#head .wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#head .wrapper header div{
+    display: flex;
+    gap: 20px;
+}
+#head .wrapper header nav{
+
+}
+#head .wrapper header div{
+    
+}
+#head .wrapper header div div{
+    position: relative;
+    border-left: 1px solid #E5E7EB;
+}
+#head .wrapper header div div h5{
+    padding-left: 20px;
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter 18pt";
+}
+#head .wrapper header div div h5 span{
+    color: #EA580C;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Inter 18pt";
+}
+#head .wrapper header item{
+    display: flex;
+    gap: 14px;
+}
+#head .wrapper header item a{
+    display: flex;
+    justify-content: space-between;
+}
+#head .wrapper header item a h5{
+    color: #6B7280;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter 18pt";
+}
+#head .wrapper header nav item a{
+    gap: 5px;
+}
+#head .wrapper header nav item a i{
+    color: #6B7280;
+    top: 8px;
+    position: relative;
+}
+
+#head2{
+    height: 81px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+#head2 .wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#head2 .wrapper header div a .dt{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: "Inter 18pt";
+    color: #030712;
+    opacity: 70%;
+}
+#head2 .wrapper header div a .all{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Inter 18pt";
+    color: #030712;
+}
+#head2 .wrapper header .hd2-div4 form{
+    display: flex;
+    align-items: center;
+}
+#head2 .wrapper header .hd2-div4 form input{
+    background-color: #F3F4F6;
+    height: 45px;
+    width: 863px;
+    padding: 8px 54px 8px 17px;
+    border-radius: 8px;
+}
+#head2 .wrapper header .hd2-div4 form a{
+    align-items: center;
+    display: flex;
+}
+#head2 .wrapper header .hd2-div4 form a img{
+    position: relative;
+    right: 40px;
+    margin-right: -22px;
+}
+#head2 .wrapper header .hd2-div5 {
+    display: flex;
+    gap: 20px;
+    top: 4px;
+    position: relative;
+}
+
+#head2 .wrapper header .hd2-div5 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#head2 .wrapper header .hd2-div5 a h5 {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter 18pt";
+    color: #030712;
+}
+
+#head2 .wrapper header .hd2-div5 a .icon-wrapper {
+    position: relative;
+}
+
+#head2 .wrapper header .hd2-div5 a .icon-wrapper img {
+    width: 19px;
+    height: 21px;
+}
+#head2 .wrapper header .hd2-div5 a:last-child .icon-wrapper img {
+    width: 19px;
+    height: 21px;
+}
+#head2 .wrapper header .hd2-div5 a:first-child .icon-wrapper span{
+    display: none;
+}
+
+#head2 .wrapper header .hd2-div5 a .badge {
+    position: absolute;
+    top: -5px;     /* Position at the top */
+    right: -5px;   /* Position at the right */
+    background-color: red;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#head3{
+    height: 41px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+#head3 .wrapper header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+#head3 .wrapper header div{
+    display: flex;
+    gap: 20px;
+}
+#head3 .wrapper header div nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+#head3 .wrapper header item{
+    display: flex;
+    gap: 14px;
+}
+#head3 .wrapper header item a{
+    display: flex;
+    justify-content: space-between;
+}
+#head3 .wrapper header item a h5{
+    color: #030712;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Inter 18pt";
+}
+#head3 .wrapper header nav item a{
+    gap: 5px;
+}
+#head3 .wrapper header nav item a i{
+    color: #030712;
+    top: 8px;
+    position: relative;
+}
+#head3 .wrapper header nav item a h5.red{
+    color: #DC2626;
+}
+#head3 .wrapper header nav item a:last-child i{
+    color: #DC2626;
+}
+#head3 .wrapper header nav item a span{
+    width: 37px;
+    height: 20px;border-radius: 4px;
+    background: linear-gradient(90deg, #DC2626 0%, #EA580C 100%);
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Inter 18pt";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+#head3 .wrapper header div nav .spcl .nav-link.active{
+    border-bottom: 2px solid #634C9F;
+    padding-bottom: 12px;
+    position: relative;
+}
+#head3 .wrapper header div nav .spcl a.active h5{
+    color: #634C9F;
+}
+#head3 .wrapper header div nav .spcl a.active i{
+    color: #634C9F;
+}
+
+
 
 
 
