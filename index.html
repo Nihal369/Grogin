@@ -92,8 +92,8 @@
                     </a>
                 </div>
                 <div class="hd2-div4">
-                    <form action="">
-                        <input type="text" placeholder="Search for products, categories or brands...">
+                    <form action="" class="search-container">
+                        <input type="text" placeholder="Search for products, categories or brands..." id="search" onkeyup="searchItems()">
                         <a href="">
                             <img src="images/search.svg" alt="">
                         </a>
@@ -156,6 +156,7 @@
                     </nav>
                 </div>
                 <nav>
+                    
                     <item>
                         <a href="">
                             <h5>Trending Products</h5>
@@ -173,6 +174,934 @@
             </header>
         </section>
     </section>
+    <section id="main">
+        <section class="wrapper">
+            <div class="gateway">
+                <h4>Home <i class="fa-solid fa-angle-right fa-xs"></i></h4>
+                <h4>Shop</h4>
+            </div>
+            <section class="centre">
+                <section class="main1">
+                    <div class="main-top">
+                        <span>
+                           <h4>Widget price filter</h4> 
+                        </span>
+                        <div class="price-range">
+                            <div>
+                                <h5>Min price</h5>
+                                <input type="number" value="0">
+                            </div>
+                            <div>
+                                <span>-</span>
+                            </div>
+                            <div>
+                                <h5>Max price</h5>
+                                <input type="number" value="0">
+                            </div>
+                        </div>
+                        <div class="price-line">
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="filter">
+                            <h5>Price: $0 — $30</h5>
+                            <a href="" class="filter">Filter</a>
+                        </div>
+                    </div>
+
+                    <div class="main-centre">
+                        <span>
+                            <h4>Product Categories</h4> 
+                         </span>
+                         <div class="mc-m">
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="fruits-veg">
+                                    <h5>Fruits & Vegetables</h5>
+                                </div>
+                                <a href="">
+                                    <img src="images/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="baby-pregnancy">
+                                    <h5>Baby & Pregnancy</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="beverages">
+                                    <h5>Beverages</h5>
+                                </div>
+                                <a href="">
+                                    <img src="images/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="meats-seafood">
+                                    <h5>Meats & Seafood</h5>
+                                </div>
+                                <a href="">
+                                    <img src="images/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Biscuits & Snacks">
+                                    <h5>Biscuits & Snacks</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Breads & Bakery">
+                                    <h5>Breads & Bakery</h5>
+                                </div>
+                                <a href="">
+                                    <img src="images/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Breaksfast & Dairy">
+                                    <h5>Breaksfast & Dairy</h5>
+                                </div>
+                                <a href="">
+                                    <img src="images/plus.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Frozen Foods">
+                                    <h5>Frozen Foods</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Grocery & Staples">
+                                    <h5>Grocery & Staples</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Healthcare">
+                                    <h5>Healthcare</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="select">
+                                    <input type="checkbox" name="" class="category-checkbox" id="Household Needs">
+                                    <h5>Household Needs</h5>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="main-centre1">
+                        <span>
+                            <h4>Filter by Color</h4>
+                        </span>
+                        <div class="mc1">
+                            <div>
+                                <a href="" class="color">
+                                    <div class="green"></div>
+                                    <h5>Green</h5>
+                                </a>
+                                <h6>(1)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-centre2">
+                        <span>
+                            <h4>Filter by brands</h4>
+                        </span>
+                        <div class="mc2">
+                            <div>
+                                <div class="brand">
+                                    <input type="checkbox" name="" class="brand-checkbox" id="Fresh">
+                                    <h5>Fresh</h5>
+                                </div>
+                                <h6>(1)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-centre3">
+                        <span>
+                            <h4>Product Status</h4>
+                        </span>
+                        <div class="mc3">
+                            <div>
+                                <div class="product">
+                                    <input type="checkbox" name="" class="product-checkbox" id="Fresh">
+                                    <h5>In Stock</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="product">
+                                    <input type="checkbox" name="" class="product-checkbox" id="Fresh">
+                                    <h5>On Sale</h5>
+
+                                    <a href="product_details.html" class="product">product_details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+    
+    
+                <section class="main2">
+                    <div class="select">
+                        <div>
+                            <a href="">
+                                <img src="images/cross.svg" alt="">
+                            </a>
+                            <h6>Clear filters</h6>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="images/cross.svg" alt="">
+                            </a>
+                            <h6>Fruits & Vegetables</h6>
+                        </div>
+                    </div>
+
+                    <div class="banner" id="banner">
+                        <div>
+                            <span>
+                                <h6>Only This Week</h6>
+                            </span>
+                            <h2>Grocery store with different</h2>
+                            <h2>treasures</h2>
+                            <p>We have prepared special discounts for you on grocery
+                                products...</p>
+                            <a href="" class="shop-now"> <h5>Shop Now</h5> <img src="images/arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="result" id="result">
+                        <div class="show-result1">
+                            <h6>Showing all 16 results</h6>
+                        </div>
+                        <div class="show-result2">
+                            <div>
+                                <div>
+                                    <h6>Sort:</h6>
+                                    <h5>Sort by latest</h5>
+                                </div>
+                                <div>
+                                    <h6>Show:</h6>
+                                    <h5>20 Items</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/widget.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/menu.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Product Display Area -->
+                    <div id="product-list" class="product-list">
+                        <!-- Hardcoded product list in HTML -->
+                        <div class="product-card">
+                            <a href="product_details.html?id=1">
+                                <img class="veg" src="images/potatoes.jpg" alt="potatoes">
+                            </a>
+                            <div class="pct">
+                                <span>75%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name name-js">Yellow Potatoes Whole
+                                    Fresh, 5lb Bag</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 86.6%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$0.50</h3>
+                                    <h4>$1.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=2">
+                                <img class="veg" src="images/orange.jpg" alt="Orange">
+                            </a>
+                            <div class="pct">
+                                <span>50%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="organic">
+                                <img src="images/leaf-icon.svg" alt="leaf-icon">
+                                <h3 class="org">ORGANIC</h3>
+                            </div>
+                            <div class="content-1">
+                                <h3 class="p-name name-js">Large Bagged Oranges</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 80%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$0.89</h3>
+                                    <h4>$1.78</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=3">
+                                <img class="veg" src="images/strawberries.jpg" alt="strawberries">
+                            </a>
+                            <div class="pct">
+                                <span>31%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="content-2">
+                                <h3 class="p-name name-js">Strawberries – 1lb</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 90%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$1.50</h3>
+                                    <h4>$2.15</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=4">
+                                <img class="veg" src="images/simple-kitchen.jpg" alt="simple-kitchen strawberrie">
+                            </a>
+                            <div class="pct">
+                                <span>13%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color-1">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name-1 name-js">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 46.6%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$21.90</h3>
+                                    <h4>$24.90</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=5">
+                                <img class="veg" src="images/apple.jpg" alt="Apple">
+                            </a>
+                            <div class="pct">
+                                <span>75%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name name-js">Peach – each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 66.6%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$0.75</h3>
+                                    <h4>$1.75</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=6">
+                                <img class="veg" src="images/banana.jpg" alt="Banana">
+                            </a>
+                            <div class="pct">
+                                <span>56%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="organic-1">
+                                <img src="images/leaf-icon.svg" alt="leaf-icon">
+                                <h3 class="org">ORGANIC</h3>
+                            </div>
+                            <a href="" class="color-2">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content-3">
+                                <h3 class="p-name-1 name-js">Marketside Fresh Organic
+                                    Bananas, Bunch</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 60%;"></div>
+                                    </div>
+                                    <h6>2</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$0.89</h3>
+                                    <h4>$1.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=7">
+                                <img class="veg" src="images/wraps.jpg" alt="Wraps">
+                            </a>
+                            <div class="pct">
+                                <span>16%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="content-2">
+                                <h3 class="p-name name-js">Large Garden Spinach &
+                                    Herb Wrap Tortillas –…</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 73.4%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$27.90</h3>
+                                    <h4>$32.90</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=8">
+                                <img class="veg" src="images/caramel-apple.jpg" alt="Caramel-apple">
+                            </a>
+                            <div class="pct">
+                                <span>10%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color-3">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name-1 name-js">Halloween Harvest Caramel
+                                    Apple Soft Caramels –…</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 78%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$19.37</h3>
+                                    <h4>$21.37</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=9">
+                                <img class="veg" src="images/brinjal.jpg" alt="Brinjal">
+                            </a>
+                            <div class="pct">
+                                <span>26%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name name-js">Fresh Purple Eggplant</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 80%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$2.99</h3>
+                                    <h4>$3.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=10">
+                                <img class="veg" src="images/pomegranate.jpg" alt="Pomegranate">
+                            </a>
+                            <div class="pct">
+                                <span>50%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="content-2">
+                                <h3 class="p-name-1 name-js">Fresh Pomegranate, Each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 80%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$1.50</h3>
+                                    <h4>$2.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=11">
+                                <img class="veg" src="images/lemon.jpg" alt="Lemon">
+                            </a>
+                            <div class="pct">
+                                <span>75%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name name-js">Fresh Lemon, Each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 40%;"></div>
+                                    </div>
+                                    <h6>2</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$0.50</h3>
+                                    <h4>$1.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=12">
+                                <img class="veg" src="images/veg-1.jpg" alt="Cauliflower">
+                            </a>
+                            <div class="pct">
+                                <span>14%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name name-js">Fresh Cauliflower, Each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 60%;"></div>
+                                    </div>
+                                    <h6>2</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$12.79</h3>
+                                    <h4>$14.79</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=13">
+                                <img class="veg" src="images/veg-2.jpg" alt="Broccoli Crowns">
+                            </a>
+                            <div class="pct">
+                                <span>36%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="content-2">
+                                <h3 class="p-name name-js">Fresh Broccoli Crowns, Each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 80%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$11.54</h3>
+                                    <h4>$17.88</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=14">
+                                <img class="veg" src="images/berries.jpg" alt="berries">
+                            </a>
+                            <div class="pct">
+                                <span>41%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="content-2">
+                                <h3 class="p-name name-js">Blackberries – 6oz</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 80%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$2.99</h3>
+                                    <h4>$4.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=15">
+                                <img class="veg" src="images/quest.jpg" alt="quest">
+                            </a>
+                            <div class="pct">
+                                <span>8%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <a href="" class="color-3">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content">
+                                <h3 class="p-name-1 name-js">30g Protein Shake – Salted
+                                    Caramel – 11 fl oz-4pk</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 83.8%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$11.99</h3>
+                                    <h4>$12.99</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="product_details.html?id=16">
+                                <img class="veg" src="images/green-apple.jpg" alt="green-apple">
+                            </a>
+                            <div class="pct">
+                                <span>17%</span>
+                                <a href="">
+                                    <img src="images/heart-icon.svg" alt="heart-icon" class="heart">
+                                </a>
+                            </div>
+                            <div class="organic-1">
+                                <img src="images/leaf-icon.svg" alt="leaf-icon">
+                                <h3 class="org">ORGANIC</h3>
+                            </div>
+                            <a href="" class="color-2">
+                                <div class="orange"></div>
+                                <div class="white"></div>
+                                <div class="white"></div>
+                            </a>
+                            <div class="content-3">
+                                <h3 class="p-name-1 name-js">Fresh Granny Smith Apple,
+                                    Each</h3>
+                                <div class="star">
+                                    <div class="star-rating">
+                                        <div class="filled"></div>
+                                        <div class="filled-stars" style="width: 100%;"></div>
+                                    </div>
+                                    <h6>3</h6>
+                                </div>
+                                <div class="price">
+                                    <h3>$15.99</h3>
+                                    <h4>$9.88</h4>
+                                </div>
+                                <div class="stock">
+                                    <a href="" class="cart">
+                                        <img src="images/cart-white.svg" alt="cart">
+                                    </a>
+                                    <h4>IN STOCK</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="wrapper">
+            <div class="f-top">
+                <div>
+                    <h4>Join our newsletter for £10 offs</h4>
+                    <p class="f-top-p1">Register now to get latest updates on promotions &
+                        coupons.Don’t worry, we not spam!</p>
+                </div>
+                <div>
+                    <form action="">
+                        <img src="images/mail.svg" alt="mail">
+                        <input type="text" placeholder="Enter your email address">
+                        <a href="">SEND</a>
+                    </form>
+                    <p>By subscribing you agree to our <span>Terms & Conditions and Privacy & Cookies Policy.</span></p>
+                </div>
+            </div>
+            <div class="f-centre">
+                <div class="f-centre-1">
+                   <h5>Do You Need Help ?</h5>
+                   <p>Autoseligen syr. Nek diarask fröbomba. Nör
+                    antipol kynoda nynat. Pressa fåmoska.</p>
+                    <div class="help1">
+                        <img src="images/phone.svg" alt="phone">
+                        <div>
+                            <h6>Monday-Friday: 08am-9pm</h6>
+                            <h4>0 800 300-353</h4>
+                        </div>
+                    </div>
+                    <div class="help2">
+                        <img src="images/mail-1.svg" alt="mail">
+                        <div>
+                            <h6>Need help with your order?</h6>
+                            <h4>info@example.com</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="centre-2">
+                    <h5>Make Money with Us</h5>
+                    <ul>
+                        <li><a href="">Sell on Grogin</a></li>
+                        <li><a href="">Sell Your Services on Grogin</a></li>
+                        <li><a href="">Sell on Grogin Business</a></li>
+                        <li><a href="">Sell Your Apps on Grogin</a></li>
+                        <li><a href="">Become an Affilate</a></li>
+                        <li><a href="">Advertise Your Products</a></li>
+                        <li><a href="">Sell-Publish with Us</a></li>
+                        <li><a href="">Become an Blowwe Vendor</a></li>
+                    </ul>
+                </div>
+                <div class="centre-2">
+                    <h5>Let Us Help You</h5>
+                    <ul>
+                        <li><a href="">Accessibility Statement</a></li>
+                        <li><a href="">Your Orders</a></li>
+                        <li><a href="">Returns & Replacements</a></li>
+                        <li><a href="">Shipping Rates & Policies</a></li>
+                        <li><a href="">Refund and Returns Policy</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Cookie Settings</a></li>
+                        <li><a href="">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="centre-2">
+                    <h5>Get to Know Us</h5>
+                    <ul>
+                        <li><a href="">Careers for Grogin</a></li>
+                        <li><a href="">About Grogin</a></li>
+                        <li><a href="">Inverstor Relations</a></li>
+                        <li><a href="">Grogin Devices</a></li>
+                        <li><a href="">Customer reviews</a></li>
+                        <li><a href="">Social Responsibility</a></li>
+                        <li><a href="">Store Locations</a></li>
+                    </ul>
+                </div>
+                <div class="centre-2">
+                    <h5>Download our app</h5>
+                    <div class="app1">
+                        <div>
+                            <a href="">
+                                <img src="images/playstore.svg" alt="playstore">
+                            </a>
+                            <h6>Download App Get-10% Discount</h6>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="images/appstore.svg" alt="appstore">
+                            </a>
+                            <h6>Download App Get-20% Discount</h6>
+                        </div>
+                    </div>
+                    <div class="app2">
+                        <h5>Follow us on social media:</h5>
+                        <div>
+                            <a href=""><img src="images/facebook.svg" alt="facebook"></a>
+                            <a href=""><img src="images/twitter.svg" alt="twitter"></a>
+                            <a href=""><img src="images/instagram.svg" alt="instagram"></a>
+                            <a href=""><img src="images/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <div class="bottom-1">
+                    <div>
+                        <h6>Copyright 2024 © Grogin WooCommerce WordPress Theme. All right reserved. Powered by <span>KLBTheme.</span></h6>
+                    </div>
+                    <div>
+                        <a href=""><span>Terms and Conditions</span></a>
+                        <a href=""><span>Privacy Policy</span></a>
+                        <a href=""><span>Order Tracking</span></a>
+                    </div>
+                </div>
+                <div class="bottom-2">
+                    <a href=""><img src="images/visa.svg" alt="visa"></a>
+                    <a href=""><img src="images/master-card.svg" alt="master-card"></a>
+                    <a href=""><img src="images/paypal.svg" alt="paypal"></a>
+                    <a href=""><img src="images/skrill.svg" alt="skrill"></a>
+                    <a href=""><img src="images/Klarna.svg" alt="Klarna"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 
