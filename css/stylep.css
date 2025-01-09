@@ -2172,6 +2172,180 @@ footer .wrapper .f-bottom .bottom-2 a{
 
 
 
+@media(max-width: 1400px) {
+    #head3 .wrapper header item a h5{
+        color: #030712;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: "Inter 18pt";
+        white-space: nowrap;
+    }
+    /* .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1225px;
+    } */
+    #notification{
+        width: 1425px;
+    }
+    .notify{
+        gap: 160px;
+    }
+    #head{
+        width: 1425px;
+    }
+    #head2{
+        width: 1425px;
+    }
+    #head2 .logo{
+        width: 122px;
+        height: 28px;
+    }
+    #head2 .wrapper header div a .dt{
+        width: 54px;
+    }
+    #head2 .wrapper header .hd2-div4 form input{
+        width: 750px;
+    }
+    #head3{
+        width: 1425px;
+    }
+
+    #main{
+        width: 1425px;
+    }
+    #main .wrapper .centre .main-top{
+        width: 242px;
+    }
+    /* #main .wrapper .centre{
+        gap: 8px;
+    } */
+    #main .wrapper .centre .main-centre,
+    #main .wrapper .centre .main-centre1,
+    #main .wrapper .centre .main-centre2,
+    #main .wrapper .centre .main-centre3{
+        width: 242px;
+    }
+    #main .wrapper .centre .main-top .price-range div input{
+        width: 108px;
+    }
+    .main2{
+        padding: 28px 0px 6px 0px;
+    }
+    .main2 .banner{
+        width: 918px;
+    }
+    .main2 .banner div h2{
+        max-width: 385px;
+        width: 392px;
+    }
+    .result{
+        width: 918px;
+    }
+    .product-list{
+        width: 918px;
+    }
+    /* .product-card{
+        width: 183px;
+    } */
+
+    footer{
+        width: 1425px;
+    }
+}
+
+
+@media(max-width: 1280px) {
+
+}
+
+@media(max-width: 1180px) {
+
+}
+
+@media(max-width: 1080px) {
+
+}
+
+@media(max-width: 1024px) {
+
+}
+
+@media(max-width: 980px) {
+
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 480px) {
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    #head2 .wrapper header .hd2-div4 form input{
+        width: 600px;
+    }
+    #head3 .wrapper header nav item a{
+        white-space: nowrap;
+    }
+    .product-image{
+        height: 600px;
+        width: 600px;
+    }
+    .pct-org{
+        position: relative;
+        top: -576px;
+    }
+    .dcs-2{
+        width: 600px;
+    }
+    .details-container-sub2{
+        position: absolute;
+        left: 600px;
+    }
+    .details-container-sub2 .rating{
+        width: 464px;
+    }
+    .details-container-sub2 .details{
+        width: 475px;
+    }
+    .details-container-sub2 .timer{
+        width: 480px;
+    }
+    .details-container-sub2 .pay{
+        width: 480px;
+        height: 138px;
+    }
+    .details-container-sub2 .pay .payment{
+        width: 480px;
+    }
+    .details-container-sub2 .pay .warranty{
+        width: 480px;
+    }
+    .suggested-container{
+        width: 1102px;
+    }
+    .product-card{
+        width: 220px;
+    }
+    .product-card:last-child{
+        display: none;
+    }
+
+}
+
+@media(max-width: 420px) {
+
+}
+
+@media(max-width: 320px) {
+
+}
+
 
 
 

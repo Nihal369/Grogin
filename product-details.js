@@ -1,27 +1,31 @@
-// Function to handle the active link color change for .nav-link
 function setNavLinkActive(element) {
-    // Remove the active class from all links
     let links = document.querySelectorAll('.nav-link');
     links.forEach(link => link.classList.remove('active'));
 
-    // Add the active class to the clicked link
     element.classList.add('active');
 }
 
-// Function to handle the active link color change for .dec-rev .nav-link1
 function setDecRevActive(event, element) {
-    event.preventDefault(); // Prevent the default behavior of the link
+    event.preventDefault();
 
-    // Remove the active class from all links
     let links1 = document.querySelectorAll('.dec-rev .nav-link1');
     links1.forEach(link => link.classList.remove('active'));
 
-    // Add the active class to the clicked link
     element.classList.add('active');
 }
 
 
+// For product_details.html
+window.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
 
+    if (productId) {
+        fetchProductDetails(productId);
+    } else {
+        console.error("Product ID is missing in the URL!");
+    }
+});
 
 
 
@@ -280,8 +284,8 @@ const products = [
         discount: "17%",
         price: "$15.99",
         originalPrice: "$9.88",
-        image: "images/veg-2.jpg",
-        imageSub: "images/veg-2.jpg",
+        image: "images/green-apple.jpg",
+        imageSub: "images/green-apple.jpg",
         imageLeaf: "images/leaf-icon.svg",
         organic: "ORGANIC",
         imgZoom: "images/zoom.svg",
@@ -289,7 +293,6 @@ const products = [
         ratingDigit: "5:00",
         code: "R504C2Y4"
     },
-    // Add more products similarly
 ];
 
 // Get product ID from the URL

@@ -36,7 +36,7 @@
     <section id="head">
         <section class="wrapper">
             <header>
-                <div>
+                <div class="hd-div">
                     <nav>
                         <item>
                             <a href="">
@@ -54,7 +54,7 @@
                         <h5>We deliver to you every day from <span>7:00 to 23:00</span></h5>
                     </div>
                 </div>
-                <nav>
+                <nav class="hd-nav">
                     <item>
                         <a href="">
                             <h5>English</h5>
@@ -75,17 +75,17 @@
     <section id="head2">
         <section class="wrapper">
             <header>
-                <div>
+                <div class="hd2-div1">
                     <a href="">
-                        <img src="images/logo-dark.svg" alt="">
+                        <img src="images/logo-dark.svg" alt="Logo" class="logo">
                     </a>
                 </div>
-                <div>
+                <div class="hd2-div2">
                     <a href="">
-                        <img src="images/location.svg" alt="">
+                        <img src="images/location.svg" alt="location">
                     </a>
                 </div>
-                <div>
+                <div class="hd2-div3">
                     <a href="">
                         <h5 class="dt">Deliver to</h5>
                         <h5 class="all">all</h5>
@@ -94,9 +94,9 @@
                 <div class="hd2-div4">
                     <form action="" class="search-container">
                         <input type="text" placeholder="Search for products, categories or brands..." id="search" onkeyup="searchItems()">
-                        <a href="">
-                            <img src="images/search.svg" alt="">
-                        </a>
+                        <div class="search-btn" id="search-btn">
+                            <img src="images/search.svg" alt="search">
+                        </div>
                         
                     </form>
                 </div>
@@ -104,21 +104,21 @@
                     <a href="">
                         <div class="icon-wrapper">
                             <span class="badge">0</span>
-                            <img src="images/account-icon.svg" alt="">
+                            <img src="images/account-icon.svg" alt="account">
                         </div>
                         <h5>Account</h5>
                     </a>
                     <a href="">
                         <div class="icon-wrapper">
                             <span class="badge">0</span>
-                            <img src="images/heart-icon.svg" alt="">
+                            <img src="images/heart-icon.svg" alt="heart">
                         </div>
                         <h5>Wishlist</h5>
                     </a>
                     <a href="">
                         <div class="icon-wrapper">
                             <span class="badge">0</span>
-                            <img src="images/cart.svg" alt="">
+                            <img src="images/cart.svg" alt="cart">
                         </div>
                         <h5>Your Cart</h5>
                     </a>
@@ -140,7 +140,7 @@
                                 <h5>Shop</h5>
                                 <i class="fa-solid fa-angle-down fa-xs"></i>
                             </a>
-                            <a href="#" class="nav-link" onclick="setActive(this)">
+                            <a href="#" class="nav-link" onclick="setActive(this)" style="white-space: nowrap;">
                                 <h5>Fruits & Vegetables</h5>
                             </a>
                             <a href="#" class="nav-link" onclick="setActive(this)">
@@ -156,7 +156,6 @@
                     </nav>
                 </div>
                 <nav>
-                    
                     <item>
                         <a href="">
                             <h5>Trending Products</h5>
@@ -176,12 +175,18 @@
     </section>
     <section id="main">
         <section class="wrapper">
+            <div class="none">
+                <input type="checkbox" id="check" class="checking">
+                <div class="menu-icon" id="menu-icon">
+                    <h5>Filter</h5>
+                </div>
+            </div>
             <div class="gateway">
                 <h4>Home <i class="fa-solid fa-angle-right fa-xs"></i></h4>
                 <h4>Shop</h4>
             </div>
             <section class="centre">
-                <section class="main1">
+                <section class="main1" id="main1">
                     <div class="main-top">
                         <span>
                            <h4>Widget price filter</h4> 
@@ -191,7 +196,7 @@
                                 <h5>Min price</h5>
                                 <input type="number" value="0">
                             </div>
-                            <div>
+                            <div class="hyfon">
                                 <span>-</span>
                             </div>
                             <div>
@@ -200,9 +205,10 @@
                             </div>
                         </div>
                         <div class="price-line">
-                            <div class="circle"></div>
-                            <div class="line"></div>
-                            <div class="circle"></div>
+                            <div class="rangeInput">
+                                <input type="range" min="0" max="100" class="input-slider-right" />
+                                <input type="range" min="0" max="100" class="input-slider-left" />
+                            </div>
                         </div>
                         <div class="filter">
                             <h5>Price: $0 — $30</h5>
@@ -221,7 +227,7 @@
                                     <h5>Fruits & Vegetables</h5>
                                 </div>
                                 <a href="">
-                                    <img src="images/plus.svg" alt="">
+                                    <img src="images/plus.svg" alt="plus">
                                 </a>
                             </div>
                             <div>
@@ -236,7 +242,7 @@
                                     <h5>Beverages</h5>
                                 </div>
                                 <a href="">
-                                    <img src="images/plus.svg" alt="">
+                                    <img src="images/plus.svg" alt="plus">
                                 </a>
                             </div>
                             <div>
@@ -245,7 +251,7 @@
                                     <h5>Meats & Seafood</h5>
                                 </div>
                                 <a href="">
-                                    <img src="images/plus.svg" alt="">
+                                    <img src="images/plus.svg" alt="plus">
                                 </a>
                             </div>
                             <div>
@@ -260,7 +266,7 @@
                                     <h5>Breads & Bakery</h5>
                                 </div>
                                 <a href="">
-                                    <img src="images/plus.svg" alt="">
+                                    <img src="images/plus.svg" alt="plus">
                                 </a>
                             </div>
                             <div>
@@ -269,7 +275,7 @@
                                     <h5>Breaksfast & Dairy</h5>
                                 </div>
                                 <a href="">
-                                    <img src="images/plus.svg" alt="">
+                                    <img src="images/plus.svg" alt="plus">
                                 </a>
                             </div>
                             <div>
@@ -341,32 +347,26 @@
                                 <div class="product">
                                     <input type="checkbox" name="" class="product-checkbox" id="Fresh">
                                     <h5>On Sale</h5>
-
-                                    <a href="product_details.html" class="product">product_details</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-    
-    
-    
                 <section class="main2">
                     <div class="select">
                         <div>
                             <a href="">
-                                <img src="images/cross.svg" alt="">
+                                <img src="images/cross.svg" alt="cross">
                             </a>
                             <h6>Clear filters</h6>
                         </div>
                         <div>
                             <a href="">
-                                <img src="images/cross.svg" alt="">
+                                <img src="images/cross.svg" alt="cross">
                             </a>
                             <h6>Fruits & Vegetables</h6>
                         </div>
                     </div>
-
                     <div class="banner" id="banner">
                         <div>
                             <span>
@@ -379,7 +379,6 @@
                             <a href="" class="shop-now"> <h5>Shop Now</h5> <img src="images/arrow.svg" alt=""></a>
                         </div>
                     </div>
-
                     <div class="result" id="result">
                         <div class="show-result1">
                             <h6>Showing all 16 results</h6>
@@ -397,10 +396,10 @@
                             </div>
                             <div>
                                 <a href="">
-                                    <img src="images/widget.svg" alt="">
+                                    <img src="images/widget.svg" alt="widget">
                                 </a>
                                 <a href="">
-                                    <img src="images/menu.svg" alt="">
+                                    <img src="images/menu.svg" alt="menu">
                                 </a>
                             </div>
                         </div>
@@ -408,7 +407,6 @@
             
                     <!-- Product Display Area -->
                     <div id="product-list" class="product-list">
-                        <!-- Hardcoded product list in HTML -->
                         <div class="product-card">
                             <a href="product_details.html?id=1">
                                 <img class="veg" src="images/potatoes.jpg" alt="potatoes">
@@ -444,7 +442,6 @@
                                     <h4>IN STOCK</h4>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="product-card">
                             <a href="product_details.html?id=2">
@@ -1102,10 +1099,6 @@
             </div>
         </section>
     </footer>
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
